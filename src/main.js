@@ -26,6 +26,8 @@ fetch(API_URL)
       // Boa! Agora, precisamos criar a "div" do card a ser exibido. Ao criar, atribua a class "card mb-4 box-shadow".
       card = document.createElement("div");
       card.classList.add("card", "mb-4", "box-shadow");
+      //tbm dá pra ser 
+      //card.className = "card mb-4 box-shadow";
 
       // Humm... Agora que já temos o card, que tal começarmos a popular as informações?
       // Crie um elemento "img" e, atribua a class como "card-img-top";
@@ -57,7 +59,7 @@ fetch(API_URL)
 
       propertyPrice = document.createElement("h6");
       propertyPrice.className = "property-price";
-      propertyPrice.innerHTML = "<strong>R$ " + price + "</strong>/noite";
+      propertyPrice.innerHTML = `<strong>R$ ${price} </strong>/noite`;
 
       // AOBA! Temos agora, todos os elementos necessários para percorrer a resposta da API e,
       // anexar um ao outro para exibição ao usuário. Para "anexar" os elementos, nós usaremos
