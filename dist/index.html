@@ -16,6 +16,19 @@
       crossorigin="anonymous"
     />
 
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/092b80762b.js" crossorigin="anonymous"></script>
+
+
     <!-- Custom Import -->
     <script src="../src/main.js"></script>
     <link rel="stylesheet" href="../src/main.css">
@@ -23,13 +36,48 @@
 
   <body>
     <header>
-      <div class="navbar navbar-dark bg-dark box-shadow">
-        <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <strong>Fake Airbnb</strong>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark box-shadow">      
+        
+          <a href="#" class="navbar-brand">
+            <img id="logo" src="../assets/logo.svg" alt="Logo">
           </a>
-        </div>
-      </div>
+        
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-globe" style="font-size:25px; color: #63dc3e"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"><i class="fas fa-globe" style="font-size:15px; color: #63dc3e; margin-right: 10px;"></i>Português (BR)</a>
+                  <a class="dropdown-item" href="#">R$ BRL</a>              
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hospede em sua acomodação</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hospede uma experiência</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ajuda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Entrar</a>
+              </li>
+            </ul>
+
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cadastre-se</button>
+          </div> 
+              
+              
+      </nav>
     </header>
 
     <main role="main">
@@ -40,11 +88,53 @@
       </div>
     </main>
 
-    <footer class="text-muted">
+    <section id="footer">
       <div class="container">
-        <p class="float-right"><a href="#">Voltar para o topo</a></p>
-        <p>Reserve acomodações e experiências únicas. Só que de mentira.</p>
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h5>Sobre</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="#">Diversidade e pertencimento</a></li>
+              <li><a href="#">Acessibilidade</a></li>
+              <li><a href="#">Confiança e segurança</a></li>
+              <li><a href="#">Airgng Citizen</a></li>
+              <li><a href="#">Newsroom</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h5>Comunidade</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="#">Airgng Magazine</a></li>
+              <li><a href="#">Airgng for Work</a></li>
+              <li><a href="#">Convide amigos</a></li>
+              <li><a href="#">Carreiras</a></li>						
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h5>Anfitrião</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="#">Hospede em sua acomodação</a></li>
+              <li><a href="#">Ofereça uma experiência</a></li>
+              <li><a href="#">Hospedagem responsável</a></li>
+              <li><a href="#">Open Homes</a></li>
+              <li><a href="#">Olimpíadas</a></li>
+              <li><a href="#">Central de Recursos</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h5>Atendimento</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="#">Central de Ajuda</a></li>
+              <li><a href="#">Atendimento ao Bairro</a></li>						
+            </ul>
+          </div>
+        </div>
+        
+        <div class="container">
+          <p class="float-right"><a href="#">Voltar para o topo</a></p>
+          <p>Reserve acomodações e experiências únicas. Só que de mentira.</p>
+        </div>        
       </div>
-    </footer>
+    </section>    
   </body>
 </html>
